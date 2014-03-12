@@ -1,0 +1,58 @@
+body{
+
+	padding:0;
+	margin: 0;
+	
+}
+
+#minSlider{
+	position: relative;
+	background-color: #333;
+	overflow: hidden;
+	
+}
+
+.minSlide{
+	position: relative;
+	top:0;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+/*#slide1{
+	background-image: url(../../images/slider1.jpg);
+	display: none;
+}*/
+#slide1{
+	background-image: url(../../images/001.jpg);
+	display: none;
+}
+#slide2{
+	background-image: url(../../images/002.jpg);
+	display: none;
+}
+#slide3{
+	background-image: url(../../images/003.jpg);
+	display: none;
+}
+/*
+#slide2{
+	background-image: url(../images/IMG_5205.JPG);
+	display: none;
+}
+#slide3{
+	background-image: url(../images/IMG_5240.JPG);
+	display: none;
+}
+#slide4{
+	background-image: url(../images/IMG_5242.JPG);
+	display: none;
+}
+#slide5{
+	background-image: url(../images/IMG_5204.JPG);
+	display: none;
+}
+*/

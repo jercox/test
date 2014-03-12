@@ -1,0 +1,77 @@
+header{
+  position: relative;
+  width: 100%;
+  font-weight: bold;
+  background: #b11116;
+  z-index: 100;
+}
+
+
+.mobileNav{
+  background: #b11116;
+  position: relative;
+  height: 40px;
+  border-top: solid 3px #8d0c10;
+  padding: 10px;
+  border-bottom: solid 3px #8d0c10;
+  z-index: 15;
+}
+.mobileNav .logo{
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background-image: url(logo40.png);
+  background-repeat: no-repeat;
+  background-position: 0px -5px;
+
+}
+.mobileNav .titulo{
+  position: absolute;
+  top: 16px;
+  left: 60px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #fff;
+  
+}
+
+.mobileNav .ciudad{
+  position: absolute;
+  top: 20px;
+  left: 255px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #fff;
+  
+}
+
+.mobileNav .btn-navbar{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 20px;
+  height: 15px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 3px;
+}
+
+.mobileNav .btn-navbar span{
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  width:20px;
+  margin-top: 5px;
+}
+
+
+.imgSlide{
+
+  width:100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}

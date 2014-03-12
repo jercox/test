@@ -1,0 +1,371 @@
+/*
+* Omar Borquez
+* omarborquez.com
+* @omarsty
+* 
+* red     #b11116
+* red2    #8d0c10
+* grey2   #3e3e3e 
+* grey3   #272727
+* grey4   #333333
+* yllw    #e89e00*/
+
+
+/*@import url(http://fonts.googleapis.com/css?family=Oswald);*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+/* basic */
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+ u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* OMAR'S STYLES CLASSES*/
+
+/*width px*/
+.w50{width: 50px;}
+.w100{width: 100px;}
+.w150{width: 150px;}
+.w200{width: 200px;}
+.w300{width: 300px;}
+.w400{width: 400px;}
+.w500{width: 500px;}
+.w600{width: 600px;}
+
+/*width %*/
+.w5{width: 5%;}
+.w10{width: 10%;}
+.w20{width: 20%;}
+.w30{width: 30%;}
+.w40{width: 40%;}
+.w50{width: 50%;}
+.w60{width: 60%;}
+.w70{width: 70%;}
+.w80{width: 80%;}
+.w90{width: 90%;}
+.w100{width: 1000%;}
+
+/* text align */
+.al{text-align: left;}
+.ar{text-align: right;}
+.ac{text-align: center;}
+
+
+/*  -------------------  */
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+
+.container a{ color: #8d0c10; }
+.container a:hover{
+  color:#000;
+  -webkit-transition: all 600ms ;
+  -moz-transition: all 600ms ;
+  -ms-transition: all 600ms ;
+  -o-transition: all 600ms ;
+  transition: all 600ms ;
+}
+
+
+
+div.container{ 
+  position: relative;
+  min-height: 300px;
+  margin:0 auto;
+  margin-top: 5px;
+  color: #333;
+  margin-bottom: 40px;
+  line-height: 25px;
+  text-align: justify;
+  padding: 20px;
+  font-size: 13px;
+}
+
+.container .informativo{
+  float: left;
+  margin-left: 10px;
+  margin-right: 190px;
+}
+
+.container ul
+{
+  padding-left: 20px;
+}
+.container li
+{
+  color: #b11116;
+}
+.container li span
+{
+  color: #333;
+}  
+
+.informativo .fl{
+  float: left;
+  width: 50%;
+  margin: 5px;
+}
+.informativo .fl img{
+  width: 100%;
+  display: block;
+}
+.informativo .article{
+  float: left;
+  margin-top: 20px;
+  padding: 15px;
+  width: 42%;
+  color: #555;
+  font-size: 0.9em;
+  padding-bottom: 30px;
+}
+.article .title{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.article .date{
+  font-weight: bold;
+}
+
+div.enlacesl{
+  position: absolute;
+  top:  0px;
+  right: 0px;
+  width: 170px;
+  background-color: #e89e00;
+}
+div.enlacesl .enlacel{
+  position: relative;
+  color: #fff;
+  font-size: 0.9em;
+  height: 60px;
+  font-weight: bold;
+  vertical-align: middle;
+  padding: 0px 15px 0px 60px;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+  line-height: 15px;
+}
+.enlacel span{
+  position: relative;
+  top:30%;
+  font-weight: bold;
+
+}
+.enlacel div{
+  position: absolute;
+  top: 35%;
+  left: -12px;
+  width: 19px;
+  height: 22px;
+  background-image: url(images/1.png);
+
+}
+.enlacesl .lab{
+  background-image: url(images/lab.png);
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+.enlacesl .radio{
+  background-image: url(images/radio.png);
+  background-repeat: no-repeat;
+  background-position: 10px 20px;
+}
+
+.enlacesl .checkup{
+  background-image: url(images/checkup.png);
+  background-repeat: no-repeat;
+  background-position: 7px 10px;
+}
+
+.enlacesl .cardio{
+  background-image: url(images/cardio.png);
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+.enlacesl .mater{
+  background-image: url(images/mater.png);
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  line-height: 30px;
+  font-size: 0.7em;
+  padding-left: 10px;
+}
+
+footer span{
+    display: inline-block;
+    float:right;
+    padding-right:30px;
+}
+
+
+
+/*columns*/
+
+.column1{
+  float: left;
+  height: 300px;
+  background: #777;
+  margin-top: 10px;
+  padding: 10px;
+}
+.column2{
+  float: left;
+  height: 300px;
+  background: #777;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+
+
+
+/* media queries */
+
+
+
+
+
+.directorio{
+  padding: 20px;
+}
+
+.directorio .dr{
+  float: left;
+  width: 30%
+}
+.directorio .dr img{
+  width: 100%
+}
+
+.directorio .form{
+  font-family: "Open Sans";
+  float: left;
+  width:65%;
+  margin-left: 10px;
+  color: #333;
+}
+.directorio .title{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+table td, table th{
+  padding: 10px;
+}
+table{
+  margin-bottom: 20px;
+}
+
+.citaTitle{
+  font-size: 1.4em;
+}
+
+input.w100pc{width: 100%;}
+input.w50pc{width: 48%;}
+textarea{ width: 100% }
+
+.directorio .form input,
+.directorio .form textarea{
+
+  border-radius: 5px;
+  border:1px solid #aaa;
+  font-size: 1.1em;
+  margin: 3px;
+
+}
+
+
+input, textarea, select
+{
+
+  border: 1px solid #ccc;
+  padding:5px;
+  color:#333;
+  font-family: 'Open Sans', sans-serif;
+  border-radius:2px;
+
+
+}
+
+input:focus, 
+textarea:focus, 
+select:focus
+{
+   box-shadow: 0px 0px 5px #ffca08; 
+   border-color: #ffca08;
+}
+
+/* formDirCommon */
+
+#formDirCommon{
+  position: absolute;
+  top: 330px;
+  right: 0px;
+  width: 170px;
+  background: #ebebeb;
+  font-size: 14px;
+}
+
+#formDirCommon .titleForm{
+
+  background: #890b0f;
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  background-image: url(UserFiles/Image/directorio.png);
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  background-size: 25px;
+  background-position: 5px;
+}
+
+#formDirCommon .formD{
+  padding: 5px;
+}
+
+#formDirCommon input
+{
+  width: 92%;
+}

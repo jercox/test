@@ -64,7 +64,7 @@
     function checkEnter(e) {
         e.preventDefault();
 
-        if (e.keyCode == 13) {
+        if (e.keyCode === 13) {
             $(e.target).blur();
             login();
         }

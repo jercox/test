@@ -10,7 +10,7 @@
     <script src="cordova.js" type="text/javascript"></script>
     <script src="jquery-mobile/js/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="jquery-mobile/js/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true"></script>
 
     <script src="scripts/login.js" type="text/javascript"></script>
     <script src="scripts/location.js" type="text/javascript"></script>
@@ -21,30 +21,65 @@
     <div id="page-home" data-role="page">
 
         <!--Header-->
-        <div id="hdx" data-role="header" data-position="fixed">
-         <img src="styles/images/headerlogo.png"  width="230px" id="lgx">
+        <div id="hdx" data-role="header" data-position="fixed" style="padding:5px;">
+         <img src="styles/images/headerlogo.png"  width="80%" id="lgx">
         </div>
 
         <!--Content-->
         <div data-role="content">
-         <
+        
         </div>
         <div class="nav">
-            <ul data-role="listview">
-                <li>
-                    <a href="#page-ui-interaction" data-transition="slide">UI Interaction Example</a>
-                </li>
-                <li>
-                    <a href="#page-location" data-transition="slide">Location Example</a>
-                </li>
-            </ul>
-        </div>
+            <div class="mobile_main">
 
-        <!--Footer-->
-        <div data-role="footer" data-position="fixed" data-id="oneFooter">
-            <span class="footerText">Built with Telerik AppBuilder&trade;</span>
+						<!-- MOBILE BUTTONS -->
+                         <div align="center" style="align-text:center">
+						<div class=" _mobile_buttons">
+							<div class="line_buttons">
+								<a href="tel:123">
+									<img class="a" src="./index_files/emergencia_es.png">
+								</a>
+								<a href="tel:1234">	
+									<img class="b" src="./index_files/conmutador_es.png">
+								</a>
+							</div>
+                            
+                           
+							<div class="line_buttons" >
+								 <a href="#page-location" data-transition="slide">
+									<img class="a" src="./index_files/como_llegar_es.png">
+								</a>
+								<a href="contacto.html"  data-transition="slide">	
+									<img class="b" src="./index_files/instalaciones_es.png">
+								</a>	
+							</div>
+							<div class="line_buttons">
+								<a href="resultadosClinicos.html">
+									<img class="a" src="./index_files/resultados_es.png">
+								</a>	
+								<a href="http://grupomedicosanjose.com/hermosillo/index.php?pag=directorio_mobile">	
+									<img class="b" src="./index_files/directorio_es.png">
+								</a>	
+							</div>
+							<div class="line_buttons">
+								<a href="servicios.html">
+									<img class="a" src="./index_files/servicios_es.png">
+								</a>	
+								<a href="#contact">	
+									<img class="b" src="./index_files/contacto_es.png">
+								</a>	
+							</div>
+							
+						</div>
+						
+						</div></div>
+            
+          
         </div>
-
+         <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
+            <a href="#page-location"><span class="footerText">FACEBOOK</span></a> <a href="#page-location"><span class="footerText">TWEETER</span></a> <a href="#page-location"><span class="footerText">PROMOCIONES</span></a>
+        </div>
+        
     </div>
 
     <!--UI interaction-->
@@ -101,35 +136,137 @@
     </div>
 
     <!--Location-->
-    <div id="page-location" data-role="page" data-add-back-btn="true">
+    <div id="page-location" data-role="page" data-add-back-btn="false">
 
         <!--Header-->
-        <div id="page-location-header" data-role="header" data-position="fixed">
-            <h1>Location</h1>
+        <div class="heax" data-role="header" data-position="fixed" style="padding:5px;">
+         <img src="styles/images/headerlogo.png"  width="80%" id="lgx">
         </div>
 
         <!--Content-->
         <div id="page-location-content" data-role="content">
             <div id="map-search-wrap">
-                <a id="map-navigate-home"></a>
-                <form data-ajax="false" onsubmit="return false;">
-                    <input id="map-address" type="search" data-role="none" placeholder="Address" />
-                    <input id="map-search" type="submit" value="" data-role="none" />
-                </form>
+                <a id="map-navigate-home"></a> 
+                
             </div>
             <div id="map-canvas"></div>
         </div>
 
         <!--Footer-->
         <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
-            <span class="footerText">Built with Telerik AppBuilder&trade;</span>
+            <span class="footerText">El punto <b>"a"</b> es tu ubicacion actual.</span>
         </div>
 
     </div>
+    
+    
+    <!--contact-->
+    <div id="contact" data-role="page" data-add-back-btn="false">
+
+        <!--Header-->
+        <div class="heax" data-role="header" data-position="fixed" style="padding:5px;">
+         <img src="styles/images/headerlogo.png"  width="80%" id="lgx">
+        </div>
+
+   <div>
+       
+       
+  
+  <div style="padding:10px">
+  <div><strong>Hospital San José Hermosillo</strong></div>
+  <div>Blvd. Morelos #304, Colonia Bachoco, C.P.83148</div>
+  <div>Hermosillo, Sonora.</div>
+  <div> </div>
+  <div><strong>Teléfonos</strong></div>
+  <div><em>Conmutador</em>: (662) 1090500</div>
+  <div><em>Urgencias</em>: (662) 1090511</div>
+  <div><em>Admisión y caja</em>: (662) 1090538</div>
+       <a href="#page-location" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">¿Como llegar?</span></span></a>
+  </div>     
+       
+  <form id="contacfrm">
+    
+      
+      
+      <table border="0" cellpadding="10" cellspacing="0">
+      <tbody>
+        <tr>
+          <td colspan="2">Nombre *
+          <br><input type="text" id="name" name="name" value="" ></td>
+        </tr>
+        <tr>
+          <td colspan="2">Email *<br>            <input type="text" id="email" name="email" value="" ></td>
+        </tr>
+        <tr>
+          <td colspan="2">Teléfono *<br>            <input type="text" id="phone" name="phone" value=""></td>
+        </tr>
+        <tr>
+          <td colspan="2">Asunto *<br>            <input type="text" id="subject" name="subject" value="" ></td>
+        </tr>
+        <tr>
+          <td colspan="2">Mensaje *<br>            <textarea id="msg" name="msg" rows="8" cols="30" ></textarea></td>
+        </tr>
+        <tr>
+          
+          <td width="55">
+              <a href="#" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Enviar</span></span></a>
+              
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</div>
+<div>
+
+
+ <script>
+var hideUrlBar = function(){
+    return true;
+    
+}
+</script>
+  
+
+        <!--Footer-->
+        <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
+            <a href="#page-location"><span class="footerText">Toca aqui para ver como llegar.</span></a>
+        </div>
+
+    
+        <!--Location-->
+         <div id="page-instalaciones" data-role="page" data-add-back-btn="false">
+
+        <!--Header-->
+        <div class="heax" data-role="header" data-position="fixed" style="padding:5px;">
+         <img src="styles/images/headerlogo.png"  width="80%" id="lgx">
+        </div>
+
+        <!--Content-->
+        <div id="page-instalaciones-content" data-role="content">
+            <h1>Hola</h1>
+        </div>
+
+        <!--Footer-->
+        <div id="page-instalaciones-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
+            <span class="footerText">El punto <b>"a"</b> es tu ubicacion actual.</span>
+        </div>
+
+    </div>
+             
+         </div>
+    
+    
+    
     <script type="text/javascript">
         document.addEventListener('deviceready', function () {
             navigator.splashscreen.hide();
+            $(".heax").click(function(){
+              location.href = "#page-home";
+          });
         }, false);
+        
+        
     </script>
 </body>
 </html>

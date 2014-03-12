@@ -1,0 +1,27 @@
+
+@media (min-width:1000px){
+
+	.bottom_banners img{
+		width: 495px;
+		display: block;
+		float: left;
+	}
+
+	.bottom_banners #banner2{
+		margin-left: 10px;
+	}
+
+}
+@media (max-width:999px){
+
+
+	.bottom_banners img{
+		width: 100%;
+		display: block;
+		float: left;
+		margin: 0px;
+		margin-bottom: 5px;
+	}
+
+
+}

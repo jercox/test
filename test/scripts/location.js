@@ -2,8 +2,11 @@
     var map,
         geocoder,
         lastMarker,
+        directionsDisplay,
         isLoading = false,
         $address;
+
+            var directionsService = new google.maps.DirectionsService();
 
     function init() {
         $address = $("#map-address");
@@ -25,13 +28,47 @@
         $("#map-search").on("click", searchAddress);
     }
 
+    
+   
+    
+    
     $(document).on("deviceready", init);
 
     function initLocation() {
         var mapOptions = {
-            zoom: 15,
+            zoom: 1,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             zoomControl: true,
+            styles:[
+    {
+        "stylers": [
+            {
+                "hue": "#ff1a00"
+            },
+            {
+                "invert_lightness": true
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 33
+            },
+            {
+                "gamma": 0.5
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#2D333C"
+            }
+        ]
+    }
+],
             zoomControlOptions: {
                 position: google.maps.ControlPosition.LEFT_BOTTOM
             },
@@ -39,12 +76,37 @@
             mapTypeControl: false,
             streetViewControl: false
         };
-
+        directionsDisplay = new google.maps.DirectionsRenderer();
         map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+        directionsDisplay.setMap(map);
+        
         geocoder = new google.maps.Geocoder();
         navigateHome();
     }
 
+    
+    
+    function findme(position){
+        
+        var start = position.coords.latitude+","+ position.coords.longitude;
+                  var end = "Hospital San José, Boulevard José María Morelos y Pavón, Bachoco, Hermosillo, Sonora, México";
+                 
+                      
+                        var request = {
+                      origin:start,
+                      destination:end,
+                      travelMode: google.maps.TravelMode.DRIVING
+                  };
+                  directionsService.route(request, function(response, status) {
+                      
+                    if (status === google.maps.DirectionsStatus.OK) {
+                      directionsDisplay.setDirections(response);
+                       
+                    }
+                  });
+                            
+    }
+    
     function navigateHome() {
         var position;
 
@@ -53,20 +115,34 @@
 
         navigator.geolocation.getCurrentPosition(
             function (position) {
-                position = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-                map.panTo(position);
-                putMarker(position);
+                positionx = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                
+                
+                map.panTo(positionx);
+               // putMarker(positionx);
+                findme(position)
+                 
+               
+                    
+                                
 
                 isLoading = false;
                 hidePage();
+                
             }, function (error) {
                 //default map coordinates
                 position = new google.maps.LatLng(43.459336, -80.462494);
-                map.panTo(position);
-
+                map.panTo(positionx);
+               
+                
+                               
+                
+                
+                
+                
                 isLoading = false;
                 hidePage();
-
+                
                 navigator.notification.alert("Unable to determine current location. Cannot connect to GPS satellite.",
                     function () { }, "Location failed", 'OK');
             }, {

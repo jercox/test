@@ -144,8 +144,13 @@
         background-size: 100%;
     }
 }
-#lgx{
-    	height:8% !important;
-    
-    
+
+a{
+    text-decoration:none;
+    }
+.line_buttons img {
+display: inline-block;
+width: 48%;
+margin-top: 5px;
 }
+

@@ -1,0 +1,188 @@
+/* gadget last_entries */
+ul.blog_last_entries{margin-left:5px;padding-left:13px;}
+
+/* gadget de lista de fechas */ 
+.ul_blog_lista_fecha{padding-left:21px;}
+.ul_blog_lista_fecha ul{padding-left:13px;}
+.ul_blog_lista_fecha li{line-height:1.5em;}
+.ul_blog_lista_fecha ul li{background:none;padding-left:0px; }
+
+/* Estilos para el listado de entradas */ 
+
+.div_lista{
+  
+  width:95%;
+}
+
+.div_lista .div_entrada{
+  padding-bottom:10px;
+  margin-bottom:30px;
+  
+}
+.div_lista .div_entrada_imagen{
+  text-align:center;
+   
+
+}
+.div_lista .div_entrada_imagen img{
+  padding:5px; 
+  margin:7px;
+  border:1px dotted #aaa;
+  text-decoration:none;
+}
+.div_lista .div_entrada_imagen a{
+  text-decoration:none!important;
+  border:none!important;
+}
+.div_lista .div_visitas_comentarios{
+	color:#666;font-weight:normal;
+	letter-spacing:1px;font-family:sans-serif;
+}
+.div_lista .div_visitas_comentarios span{color:#666;padding-right:15px;}
+
+/* Estilos generales */ 
+
+.div_entrada_titulo{
+  font-size:1.5em;
+  font-weight:bold;
+  margin-bottom:5px;
+  color:#b11116;
+}
+.div_entrada_titulo a{
+  color:#d52; 
+  text-decoration:none;
+}
+.div_entrada_titulo a:hover{
+  color:#111; 
+}
+
+.div_entrada_autor{
+  font-size:12px;
+  color:#666;
+ 
+}
+
+.div_entrada_descripcion{
+   border-bottom:1px solid #b11116;
+   margin-bottom:10px;
+   padding-bottom:10px;
+}
+
+.div_entrada_fecha{
+   text-align:right;
+   color:#666;
+   font-style:italic;
+   font-size:12px;
+}
+
+.div_visitas_comentarios{
+   text-align:right;
+   font-style:italic;
+   color:#666;
+   font-size:12px;
+}
+.div_visitas_comentarios span{
+   font-size:12px;
+   margin:5px;
+}
+
+.div_prev_next{
+  text-align:center!important;
+}
+
+.div_prev_next a{
+  margin: 20px;
+}
+.div_entradas_relacionadas{
+  text-align:right;
+}
+/* Estilos para el detalle de entradas */ 
+.div_contenido_detalle{
+  width:100%;
+  margin-bottom:31px;
+}
+.div_detalle{
+  border-bottom:1px solid #ddd;
+  margin-bottom:20px;
+  padding-bottom:10px;
+}
+.div_detalle .div_visitas{
+   text-align:right;
+   font-style:italic;
+   color:#666;
+   font-size:12px;
+  
+}
+.div_detalle .div_visitas{
+  font-size:16px;
+  margin-top:15px; 
+  margin-bottom:5px; 
+}
+.div_detalle .div_visitas span{
+  margin-left:20px; 
+}
+
+a.selected_filter{
+	color:#d52;
+
+}
+.div_detalle .social_bar{ 
+	text-align:right;
+	background-color:#eee;
+	margin-top:15px;
+	padding:4px;
+	padding-top:7px;
+}
+
+/*  carousel  */
+
+.divCarousel{
+	width:100%;
+	overflow:hidden;
+	padding: 0;
+        margin: 0;
+        height: 350px;
+}
+.carousel{
+	width:100%;
+	display: block;
+    	overflow:hidden;
+	padding: 0;
+        margin: 0;
+	height: 330px;
+}
+
+.carousel li.item{
+	display: block;
+    	overflow:hidden;
+        text-align: center;
+        height: 280px;
+        list-style: none;
+        float:  left;
+}
+
+.carousel .fl{
+  float: left;
+  width: 50%;
+  margin: 5px;
+}
+.carousel .fl img{
+  width: 100%;
+  display: block;
+}
+.carousel .article{
+  float: left;
+  margin-top: 20px;
+  padding: 15px;
+  width: 42%;
+  color: #555;
+  font-size: 0.9em;
+  padding-bottom: 30px;
+}
+.carousel .title{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.carousel .date{
+  font-weight: bold;
+}

@@ -1,0 +1,72 @@
+.mobile_buttons{ position: relative; margin-top: 10px; text-align: center;}
+.line_buttons{ position: relative;  }
+.line_buttons img{ 
+	display: inline-block;
+	width: 48%;
+	margin-top: 5px;
+ }
+.line_buttons img.a{ bottom: 0px; left: 5px; }
+.line_buttons img.b{ bottom: 0px; right: 5px; } 
+
+.mobile_footer{
+
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  color: #fff;
+  font-size: 0.8em;
+
+}
+
+.mobile_footer img{
+	display: inline-block;
+	position: absolute;
+	width: 48%;
+	
+}
+
+.mobile_footer img.a{ bottom: 0px; left: 5px; }
+.mobile_footer img.b{ bottom: 0px; right: 5px; }
+
+.mobile-resultados-clinicos{
+	padding:10px;
+	margin-top:20px;
+	background:#fafafa;
+	text-align:center;
+}
+
+.mobile-resultados-clinicos .rc,
+.mobile-resultados-clinicos .rcButon,
+.form-contacto input,
+.form-contacto textarea,
+.form-contacto a{
+	width:90%;
+	font-size:1.5em;
+	display:inline-block;
+	margin-top:10px;
+}
+
+.rcButon,.form-contacto a{
+
+	background:#b11116;
+	border:1px solid #ccc;
+	padding:10px;
+	color:#fff;
+	text-align: center;
+	
+}
+
+h1{
+	margin-top:10px!important;
+}
+
+#promos{
+	margin-top: 20px;
+}
+
+#promos img{
+
+	width:100%;
+	border:3px solid #e89e00;
+}

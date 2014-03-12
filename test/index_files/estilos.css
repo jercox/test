@@ -1,0 +1,246 @@
+/* ==================(((estilos generales)))==================== */
+
+.a_r {text-align:right;}
+.a_c {text-align:center;}
+.a_l {text-align:left;}
+.f_b {font-weight:bold;}
+.n_w {white-space:nowrap;}
+.c_b {color:#0cf;}
+.img_dec{
+	padding:2px;
+	border:1px #008 solid;
+	background-color:#ddd;
+}
+
+.img-responsive{
+	width:100%;
+	max-width:800px;
+		
+}
+
+a.button{
+    background:#8d0c10;
+    color:#fff;
+    padding:8px;
+    display:inline-block;
+    border-radius:3px;
+}
+a.button:hover{
+    box-shadow:0px 0px 5px #8d0c10;
+    color:#aaa;
+}
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,  
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contacto-left{
+	float:left;
+	width: 375px;
+}
+
+.contacto-right{
+	float:left;
+}
+.contacto-right strong{
+	font-weight:bold;
+}
+
+
+.headerContenido{
+		width: 800px;
+		height: 250px;
+		background: url(http://grupomedicosanjose.com/hermosillo/UserFiles/Image/atencionh.jpg);
+		background-size: cover;
+		position:relative;
+		margin-bottom: 20px;
+	}
+	.headerContenido .redes{
+		position: absolute;
+		width: 40px;
+		height: 100px;
+		top:70px;
+		background-color: #e89e00;
+		-webkit-border-top-right-radius: 15px;
+		-webkit-border-bottom-right-radius: 15px;
+		-moz-border-radius-topright: 15px;
+		-moz-border-radius-bottomright: 15px;
+	 	border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+		padding-top: 0;
+	}
+
+	.headerContenido .redes .facebook{
+		position: absolute;
+		top: 50px;
+		left: 0px;
+		width: 40px;
+		height: 70px;
+		background-image: url(http://grupomedicosanjose.com/hermosillo/UserFiles/disenyos/hsj/images/facebook.png);
+		background-repeat: no-repeat;
+		background-position: 4px 8px;
+		border-top: 1px solid #f9e3b7;
+	}
+	.headerContenido .redes .twitter	{
+		position: absolute;
+		top: 0;
+		left: 0px;
+		width: 40px;
+		height: 50px;
+		background-image: url(http://grupomedicosanjose.com/hermosillo/UserFiles/disenyos/hsj/images/twitter.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+.contenidoeditado{
+	width:800px;
+}	
+.contenidoeditado .fl{
+	float:left;
+	padding:8px;
+}
+
+h1,h2,h3{
+margin:0;
+color: #890b0f;
+}	
+
+/* listas en el contenido */
+.lista-contenido{
+    
+    color:#b11116;
+    
+}
+.lista-contenido span{
+    color:#333;
+}
+
+.container .informativo{
+	font-size: 13px;
+}
+
+.cb{
+	clear:both;
+}
+.aseguradoras{
+	font-size:10px;
+}
+iframe{
+border: 17px solid #e89e00;
+border-radius: 15px;
+}
+.rbutton{
+	display:block;
+	width:100%;
+	text-align:center;
+	margin-top: 10px;
+}
+
+.titleCardio{
+padding-left: 40px;
+padding-bottom: 10px;
+background-repeat: no-repeat;
+background-image: url(http://grupomedicosanjose.com/hermosillo/UserFiles/Image/cardiologia.png);
+}
+
+.titleCheckUp{
+background-image: url(UserFiles/Image/check.png);
+background-repeat: no-repeat;
+padding-bottom: 10px;
+padding-left: 40px;
+padding-top: 5px;
+}
+
+.telefonoInteriores{
+background-image: url(UserFiles/Image/tel.png);
+background-repeat: no-repeat;
+padding-left: 30px;
+}
+
+.titleContacto{
+background-image: url(UserFiles/Image/contact.png);
+background-repeat: no-repeat;
+padding-bottom: 10px;
+padding-left: 43px;
+}
+
+.titlelab{
+background-image: url(UserFiles/Image/lab.png);
+background-repeat: no-repeat;
+padding-bottom: 10px;
+padding-left: 43px;
+padding-top: 5px;
+}
+
+.titleMaternidad{
+background-image: url(UserFiles/Image/maternidad-icono.png);
+background-repeat: no-repeat;
+padding-bottom: 10px;
+padding-left: 30px;
+padding-top: 5px;
+}
+
+.titleCneonatales{
+background-image: url(UserFiles/Image/cneonatales-icono.png);
+background-repeat: no-repeat;
+padding-bottom: 10px;
+padding-left: 37px;
+padding-top: 5px;
+margin-top: 20px;
+}
+
+.titleCembarazadas{
+background-image: url(UserFiles/Image/cembarazadas-icono.png);
+background-repeat: no-repeat;
+padding-bottom: 10px;
+padding-left: 37px;
+padding-top: 5px;
+}
+
+.titleRadio{
+background-image: url(UserFiles/Image/rx.png);
+background-repeat: no-repeat;
+padding-bottom: 10px;
+padding-left: 41px;
+padding-top: 0px;
+}
+
+.buscadorDerecho{
+background-image: url(UserFiles/Image/directorio.png);
+background-repeat: no-repeat;
+padding-left: 30px;
+}
+
+.circleselected{
+color:#aaa!important;
+
+}
+
+.links-recorridos{ 
+    margin-top:20px;
+}
+
+.links-recorridos a{
+    display:block;
+    margin:10px;
+    padding:15px;
+    border-radius:3px;
+    background : #8d0c10;
+    color:#fff;
+    text-align : center;
+}
+

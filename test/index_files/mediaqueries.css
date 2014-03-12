@@ -1,0 +1,101 @@
+/*
+
+
+@media all and (min-width: 480px){  
+.column1{ width: 60%; margin-right: 10px;}
+.column2{ width: 30%; }
+
+}
+
+@media all and (min-width: 980px){
+
+
+}
+
+@media all and (min-width: 980px){
+
+  div.nav2{ width: 1000px; margin: 0 auto;}
+  .center{ position: relative; width: 1000px; margin: 0 auto;}
+  .container{ position: relative; width: 1000px; margin: 0 auto;}
+  .mobileMenu,  .mobileNav{ display: none; }
+  .cmf{ width: 1000px; }
+
+}
+
+@media all and (max-width: 979px){
+.nav1, .nav2, .nav3 { display: none;}
+
+}
+
+@media all and (min-width: 980px){
+
+  .container{ position: relative; width: 1000px; margin: 0 auto;}
+  .fl img{ height: 300px;}
+  .informativo .article {height: 220px;} 
+}
+@media all and (max-width: 980px){
+  
+}
+
+@media all and (max-width: 700px){
+  .informativo .article,
+  .informativo .fl{ width: 90% }  
+}
+
+*/
+
+
+
+@media screen and  (min-width:700px){
+  .mobile_main{ display: none;}
+  div.nav2{ width: 1000px; margin: 0 auto;}
+  .center{ position: relative; width: 1000px; margin: 0 auto;}
+  .container{ position: relative; width: 1000px; margin: 0 auto;}
+  .mobileMenu,  .mobileNav{ display: none; }
+  .cmf{ width: 1000px; }
+  .container{ position: relative; width: 1000px; margin: 0 auto;}
+  /*.fl img{ height: 300px;}*/
+  .informativo .article {height: 220px;} 
+
+  .container .informativo{ max-width: 100%;}
+	.bottom_banners img{
+		width: 495px;
+		display: block;
+		float: left;
+	}
+
+	.bottom_banners #banner2{
+		margin-left: 10px;
+	}
+	.bottom_banners img{
+		width: 495px;
+		display: block;
+		float: left;
+	}
+
+	.bottom_banners #banner2{
+		margin-left: 10px;
+	}
+
+
+}
+
+@media screen and (max-width:699px){
+
+  .enlacesl, .containerMobile, #scrollDown, 
+  .socials, #footer, .ciudad, #mainForm, .nav1, 
+  .nav2, .nav3 { display: none;}
+  
+  .informativo .article,
+  .informativo .fl{ width: 90% }  
+  #minSlider{ height: 110px; }
+	.informativo{ margin-right: 0!important; }
+  .container .informativo{ max-width: 94%;}  
+	.bottom_banners img{
+		width: 100%;
+		display: block;
+		float: left;
+		margin: 0px;
+		margin-bottom: 5px;
+	}
+}

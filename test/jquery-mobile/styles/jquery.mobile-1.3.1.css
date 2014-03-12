@@ -1038,7 +1038,7 @@ a.ui-link-inherit {
 .ui-mobile-nosupport-boxshadow .ui-btn:focus,
 .ui-mobile-nosupport-boxshadow .ui-link-inherit:focus {
 	outline-width: 1px;
-	outline-style: auto;
+	
 }
 /* some unsets - more probably needed */
 .ui-mobile, .ui-mobile body { height: 99.9%; }
