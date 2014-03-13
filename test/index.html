@@ -14,6 +14,10 @@
 
     <script src="scripts/login.js" type="text/javascript"></script>
     <script src="scripts/location.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="recorridos/4piso/css/panorama360.css" media="all" />
+	<script src="recorridos/4piso/js/jquery.mousewheel.min.js"></script>
+	<script src="recorridos/4piso/js/jquery.panorama360.js"></script>
+
 </head>
 <body>
 
@@ -49,7 +53,7 @@
 								 <a href="#page-location" data-transition="slide">
 									<img class="a" src="./index_files/como_llegar_es.png">
 								</a>
-								<a href="contacto.html"  data-transition="slide">	
+								<a href="#instalaciones"  data-transition="slide">	
 									<img class="b" src="./index_files/instalaciones_es.png">
 								</a>	
 							</div>
@@ -82,61 +86,11 @@
         
     </div>
 
-    <!--UI interaction-->
-    <div id="page-ui-interaction" data-role="page" data-add-back-btn="true">
+    
 
-        <!--Header-->
-        <div data-role="header" data-position="fixed">
-            <h1>Login</h1>
-        </div>
-
-        <!--Content-->
-        <div data-role="content">
-            <div id="login-wrap">
-                <form data-ajax="false" id="login-form">
-                    <h3 id="login-text">Enter your credentials:</h3>
-                    <div>
-                        <input id="login-username" type="text" placeholder="Username" />
-                        <input id="login-password" type="password" placeholder="Password" />
-                    </div>
-
-                    <div class="buttons ui-bar">
-                        <div>
-                            <div class="left">
-                                <input type="submit" id="login" data-icon="check" data-inline="true" class="left" value="Login" />
-                            </div>
-                            <div class="right">
-                                <button id="login-reset" data-icon="delete" data-inline="true" class="right">Reset</button>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <div id="logout-wrap">
-                <div>
-                    <h1 class="welcome">Welcome, <span id="logout-username"></span>!
-                    </h1>
-                </div>
-
-                <div class="buttons">
-                    <div data-role="controlgroup" data-type="horizontal">
-                        <button id="logout" data-icon="back">Logout</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Footer-->
-        <div data-role="footer" data-position="fixed" data-id="oneFooter">
-            <span class="footerText">Built with Telerik AppBuilder&trade;</span>
-        </div>
-
-    </div>
-
-    <!--Location-->
-    <div id="page-location" data-role="page" data-add-back-btn="false">
+    
+    
+      <div id="instalaciones" data-role="page" data-add-back-btn="false">
 
         <!--Header-->
         <div class="heax" data-role="header" data-position="fixed" style="padding:5px;">
@@ -145,19 +99,128 @@
 
         <!--Content-->
         <div id="page-location-content" data-role="content">
-            <div id="map-search-wrap">
-                <a id="map-navigate-home"></a> 
-                
+           <div align="center" style="margin-top:12px; "><b>RECORRIDO VIRTUAL</b></div>
+            
+            <a href="./recorridos/lobby/index.html" data-role="button" data-corners="true" 
+                 data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
+                  data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c">
+                  <span class="ui-btn-inner"><span class="ui-btn-text">LOBBY</span></span></a>
+            <a href="#page-location" data-role="button" data-corners="true" 
+                 data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
+                  data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c">
+                  <span class="ui-btn-inner"><span class="ui-btn-text">UCIN(Cuneros)</span></span></a>
+            <a href="#page-location" data-role="button" data-corners="true" 
+                 data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
+                  data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c">
+                  <span class="ui-btn-inner"><span class="ui-btn-text">Jr. SUITE</span></span></a>
+            <a href="#page-location" data-role="button" data-corners="true" 
+                 data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
+                  data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c">
+                  <span class="ui-btn-inner"><span class="ui-btn-text">MASTER SUITE 1</span></span></a>
+             <a href="#page-location" data-role="button" data-corners="true" 
+                 data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
+                  data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c">
+                  <span class="ui-btn-inner"><span class="ui-btn-text">MASTER SUITE 2</span></span></a>
+             <a href="#page-location" data-role="button" data-corners="true" 
+                 data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
+                  data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c">
+                  <span class="ui-btn-inner"><span class="ui-btn-text">HABITACIÓN SENCILLA</span></span></a>
+            
+            <a href="#4piso" data-transition="slide" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c">
+                  <span class="ui-btn-inner"><span class="ui-btn-text">CUARTO PISO</span></span></a>
+            
+             <a href="#page-location" data-role="button" data-corners="true" 
+                 data-shadow="true" data-iconshadow="true" data-wrapperels="span" 
+                  data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c">
+                  <span class="ui-btn-inner"><span class="ui-btn-text">RESTAURANTE</span></span></a>
+             
+             </div>
+           
+            <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
+            <span class="footerText">El punto <b>"a"</b> es tu ubicacion actual.</span>
             </div>
-            <div id="map-canvas"></div>
-        </div>
+     
+
+          </div>
 
         <!--Footer-->
-        <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
-            <span class="footerText">El punto <b>"a"</b> es tu ubicacion actual.</span>
+        
+    
+    
+    
+    
+    
+    
+    
+    <!--4piso-->
+    <div id="4piso" data-role="page" data-add-back-btn="false">
+
+        <!--Header-->
+        <div class="heax" data-role="header" data-position="fixed" style="padding:5px;">
+         <img src="styles/images/headerlogo.png"  width="80%" id="lgx">
         </div>
 
-    </div>
+        <!--Content-->
+            <div id="page-location-content" data-role="content">
+          
+	            <div class="panorama">
+        
+        		    <div class="preloader"></div>
+        		        <div class="panorama-view">
+        		    	    <div class="panorama-container" style="height:100% !important">
+        			    	    <img src="recorridos/4piso/images/View_from_Sky_Tower_Akl.jpg" data-width="2280" data-height="300" alt="" />
+                              </div>
+    		            </div> 
+    		
+                    <a class="info" href="#">Cuarto Piso</a>
+	            </div> 
+            </div>
+	
+	
+       
+
+            <!--Footer-->
+            <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
+                <span class="footerText">Toca y arrastra la pantalla.</span>
+            </div>
+            
+            <script>
+    		
+            $(function(){
+    			$('.panorama-view').panorama360({ 
+    				sliding_controls: true 
+    			});
+    		});
+    	</script>
+        
+        </div>
+    
+    
+    
+    
+    <!--Location-->
+        <div id="page-location" data-role="page" data-add-back-btn="false">
+
+        <!--Header-->
+            <div class="heax" data-role="header" data-position="fixed" style="padding:5px;">
+             <img src="styles/images/headerlogo.png"  width="80%" id="lgx">
+            </div>
+
+        <!--Content-->
+            <div id="page-location-content" data-role="content">
+                <div id="map-search-wrap">
+                    <a id="map-navigate-home"></a> 
+                    
+                </div>
+                <div id="map-canvas"></div>
+            </div>
+
+            <!--Footer-->
+            <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
+                <span class="footerText">El punto <b>"a"</b> es tu ubicacion actual.</span>
+            </div>
+
+        </div>
     
     
     <!--contact-->
@@ -168,95 +231,86 @@
          <img src="styles/images/headerlogo.png"  width="80%" id="lgx">
         </div>
 
-   <div>
+             <div id="page-location-content" data-role="content">
        
        
   
-  <div style="padding:10px">
-  <div><strong>Hospital San José Hermosillo</strong></div>
-  <div>Blvd. Morelos #304, Colonia Bachoco, C.P.83148</div>
-  <div>Hermosillo, Sonora.</div>
-  <div> </div>
-  <div><strong>Teléfonos</strong></div>
-  <div><em>Conmutador</em>: (662) 1090500</div>
-  <div><em>Urgencias</em>: (662) 1090511</div>
-  <div><em>Admisión y caja</em>: (662) 1090538</div>
-       <a href="#page-location" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">¿Como llegar?</span></span></a>
-  </div>     
+              <div style="padding:10px">
+              <div><strong>Hospital San José Hermosillo</strong></div>
+              <div>Blvd. Morelos #304, Colonia Bachoco, C.P.83148</div>
+              <div>Hermosillo, Sonora.</div>
+              <div> </div>
+              <div><strong>Teléfonos</strong></div>
+              <div><em>Conmutador</em>: (662) 1090500</div>
+              <div><em>Urgencias</em>: (662) 1090511</div>
+              <div><em>Admisión y caja</em>: (662) 1090538</div>
+                   <a href="#page-location" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">¿Como llegar?</span></span></a>
+              </div>     
        
-  <form id="contacfrm">
+              <form id="contacfrm">
+                
+                  
+                  
+                  <table border="0" cellpadding="10" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td colspan="2">Nombre *
+                      <br><input type="text" id="name" name="name" value="" ></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Email *<br>            <input type="text" id="email" name="email" value="" ></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Teléfono *<br>            <input type="text" id="phone" name="phone" value=""></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Asunto *<br>            <input type="text" id="subject" name="subject" value="" ></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Mensaje *<br>            <textarea id="msg" name="msg" rows="8" cols="30" ></textarea></td>
+                    </tr>
+                    <tr>
+                      
+                      <td width="55">
+                          <a href="#" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Enviar</span></span></a>
+                          
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+        </div>
+        
+        
+     <!--Footer-->
+        <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
+            <a href="#page-location"><span class="footerText">Toca aqui para ver como llegar.</span></a>
+        </div>
     
-      
-      
-      <table border="0" cellpadding="10" cellspacing="0">
-      <tbody>
-        <tr>
-          <td colspan="2">Nombre *
-          <br><input type="text" id="name" name="name" value="" ></td>
-        </tr>
-        <tr>
-          <td colspan="2">Email *<br>            <input type="text" id="email" name="email" value="" ></td>
-        </tr>
-        <tr>
-          <td colspan="2">Teléfono *<br>            <input type="text" id="phone" name="phone" value=""></td>
-        </tr>
-        <tr>
-          <td colspan="2">Asunto *<br>            <input type="text" id="subject" name="subject" value="" ></td>
-        </tr>
-        <tr>
-          <td colspan="2">Mensaje *<br>            <textarea id="msg" name="msg" rows="8" cols="30" ></textarea></td>
-        </tr>
-        <tr>
-          
-          <td width="55">
-              <a href="#" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-c ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Enviar</span></span></a>
-              
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </form>
-</div>
-<div>
+        </div>
 
 
+  
+
+       
+    
+        
+    
+    
+    
+  
+    
+    
+             
+   </div>
+    
+    
  <script>
 var hideUrlBar = function(){
     return true;
     
 }
 </script>
-  
-
-        <!--Footer-->
-        <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
-            <a href="#page-location"><span class="footerText">Toca aqui para ver como llegar.</span></a>
-        </div>
-
-    
-        <!--Location-->
-         <div id="page-instalaciones" data-role="page" data-add-back-btn="false">
-
-        <!--Header-->
-        <div class="heax" data-role="header" data-position="fixed" style="padding:5px;">
-         <img src="styles/images/headerlogo.png"  width="80%" id="lgx">
-        </div>
-
-        <!--Content-->
-        <div id="page-instalaciones-content" data-role="content">
-            <h1>Hola</h1>
-        </div>
-
-        <!--Footer-->
-        <div id="page-instalaciones-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
-            <span class="footerText">El punto <b>"a"</b> es tu ubicacion actual.</span>
-        </div>
-
-    </div>
-             
-         </div>
-    
-    
     
     <script type="text/javascript">
         document.addEventListener('deviceready', function () {
